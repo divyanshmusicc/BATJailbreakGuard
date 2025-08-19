@@ -18,11 +18,11 @@
   <img src="https://img.shields.io/badge/Swift-5.5+-303658?style=for-the-badge&logo=swift&logoColor=303658&labelColor=E6E6E6" alt="Swift 5.5+" style="margin:0;">
 </a>
 
-<a href="https://swift.org" target="_blank">
+<a href="" target="_blank">
   <img src="https://img.shields.io/badge/Package-SwiftPM-303658?style=for-the-badge&logo=distrobox&logoColor=303658&labelColor=E6E6E6" alt="SwiftPM" style="margin:0;">
 </a>
 
-<a href="https://www.gnu.org/licenses/agpl-3.0" target="_blank">
+<a href="" target="_blank">
   <img src="https://img.shields.io/badge/Version-1.0.0-303658?style=for-the-badge&logo=veed&logoColor=303658&labelColor=E6E6E6" alt="Version 1.0.0" style="margin:0;">
 </a>
 
