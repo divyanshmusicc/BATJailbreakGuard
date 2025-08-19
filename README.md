@@ -514,10 +514,10 @@ func testChecksum() {
 - Contributions are welcome, including bug fixes and additional detection checks.
 - Ensure any added checks do not execute dangerous APIs directly.
 - Keep safety and App Store compliance in mind.
-
+  
 ## 6. License
 **BATJailbreakGuard** is available under the MIT License.  
-[![License: MIT](https://img.shields.io/badge/License-MIT-303658?style=for-the-badge)](LICENSE)
+See the [LICENSE](LICENSE) file for more details.
 
 
 ## 7. Support
