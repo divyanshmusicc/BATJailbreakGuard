@@ -26,7 +26,7 @@
   <img src="https://img.shields.io/badge/Version-1.0.0-303658?style=for-the-badge&logo=veed&logoColor=303658&labelColor=E6E6E6" alt="Version 1.0.0" style="margin:0;">
 </a>
 
-<a href="https://www.gnu.org/licenses/agpl-3.0" target="_blank">
+<a href="https://opensource.org/licenses/MIT" target="_blank">
   <img src="https://img.shields.io/badge/License-MIT-303658?style=for-the-badge&logo=gnu&logoColor=303658&labelColor=E6E6E6" alt="MIT License" style="margin:0;">
 </a>
 
