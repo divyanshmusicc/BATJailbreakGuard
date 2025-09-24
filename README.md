@@ -4,7 +4,6 @@
 
 <h2></h2>
 
-  <img width="1280" height="640" alt="Image" src="https://github.com/user-attachments/assets/aede38ea-9871-4b1f-8692-b9b8037f2401" />
   
 
 
