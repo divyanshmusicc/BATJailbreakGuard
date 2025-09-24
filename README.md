@@ -1,6 +1,6 @@
 <h1 align="center">BATJailbreakGuard</h1>
 
-<p align="center"> <a href="https://www.engbaselabutaleb.com" target="_blank"> <img src="https://img.shields.io/badge/By-Basel%20AbuTaleb-black?style=for-the-badge&logo=bat&logoColor=%23303658&labelColor=E6E6E6&color=%23303658" style="margin:0;" vertical-align: middle;"> </a> </p>
+<p align="center"> <a href="https://www.engbaselabutaleb.com" target="_blank"> <img alt="Image" src="https://github.com/user-attachments/assets/cc104bda-8159-4152-80e8-99fe6c62c93d" style="margin:0;" vertical-align: middle;/> </a> </p>
 
 <h2></h2>
 
