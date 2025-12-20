@@ -83,8 +83,8 @@ Apple does not provide any official API for detecting jailbroken devices, so the
 - **Add the Package via Swift Package Manager**
    - Go to **File > Add Packages...**
    - In the search field, paste the repository URL:  
-     ```
-     https://github.com/Basilabt/BATJailbreakGuard
+     ```     
+     https://github.com/Basilabt/BATJailbreakGuard.git
      ```
    - Select the latest version or a specific version tag.
    - Click **Add Package** and choose your app target.
