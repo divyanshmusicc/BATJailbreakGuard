@@ -24,7 +24,7 @@ public final class JailbreakDetectionService {
     /// Initializes the main jailbreak detection service with a concrete service conforming to `JailbreakDetectionServiceProtocol`.
     ///
     /// - Parameter service: A concrete instance of a jailbreak detection service.
-    init(service: JailbreakDetectionServiceProtocol) {
+    public init(service: JailbreakDetectionServiceProtocol) {
         self._service = service
     }
     
