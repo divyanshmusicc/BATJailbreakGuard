@@ -1,0 +1,46 @@
+name: BATDemo
+options:
+  bundleIdPrefix: com.batdemo
+  deploymentTarget:
+    iOS: "14.0"
+  createIntermediateGroups: true
+
+packages:
+  BATJailbreakGuard:
+    path: .
+
+targets:
+  BATDemo:
+    type: application
+    platform: iOS
+    sources:
+      - BATDemo
+    info:
+      path: BATDemo/Info.plist
+      properties:
+        CFBundleDisplayName: BATGuard
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+    dependencies:
+      - package: BATJailbreakGuard
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.batdemo.guard
+        TARGETED_DEVICE_FAMILY: "1"
+        SWIFT_VERSION: "5.0"
+        IPHONEOS_DEPLOYMENT_TARGET: "14.0"
+        CODE_SIGNING_ALLOWED: "NO"
+        CODE_SIGNING_REQUIRED: "NO"
+        CODE_SIGN_IDENTITY: ""
+        DEVELOPMENT_TEAM: ""
+
+schemes:
+  BATDemo:
+    build:
+      targets:
+        BATDemo: all
+    run:
+      config: Release
