@@ -115,11 +115,29 @@ final class ViewController: UIViewController {
         sym2.addSuspiciousPaths(["/var/jb"])
         add("X3 Symlink(custom)", sym2.isJailbreakDetected(), "lstat /var/jb")
 
+        // X4 - raw syscall() probes: bypass every libc wrapper
+        var st = stat()
+        var sfs = statfs()
+        var lbuf = [CChar](repeating: 0, count: 256)
+        let l1 = gh_raw_lstat("/var/jb", &st)
+        let l2 = gh_raw_access("/var/jb", 0)
+        let l3 = gh_raw_open("/var/jb/usr/sbin/frida-server", 0)
+        let l4 = gh_raw_readlink("/var/jb", &lbuf, 256)
+        let l5 = gh_raw_statfs("/var/jb", &sfs)
+        let c1 = gh_raw_connect_loopback(27042)
+        let ctl = gh_raw_lstat("/usr/lib", &st)
+        var obuf = [CChar](repeating: 0, count: 64)
+        _ = gh_raw_osversion(&obuf, 64)
+        let osv = String(cString: obuf)
+        let rawAllBlocked = (l1 == -1 && l2 == -1 && l3 == -1 && l4 == -1 && l5 == -1 && c1 == -1)
+        add("X4 Syscalls(raw)", !rawAllBlocked,
+            "lstat:\(l1) acc:\(l2) open:\(l3) rdlink:\(l4) stfs:\(l5) conn:\(c1) ctl:\(ctl) osver:\(osv)")
+
         let header: String
         if detected == 0 {
-            header = "RESULT: ALL CLEAN (0/12 detected)"
+            header = "RESULT: ALL CLEAN (0/13 detected)"
         } else {
-            header = "RESULT: \(detected)/12 DETECTED JAILBREAK"
+            header = "RESULT: \(detected)/13 DETECTED JAILBREAK"
         }
         let stamp = DateFormatter.localizedString(from: Date(), dateStyle: .none, timeStyle: .medium)
         let bundleID = Bundle.main.bundleIdentifier ?? "?"

@@ -31,6 +31,7 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.batdemo.guard
         TARGETED_DEVICE_FAMILY: "1"
         SWIFT_VERSION: "5.0"
+        SWIFT_OBJC_BRIDGING_HEADER: BATDemo/BATDemo-Bridging-Header.h
         IPHONEOS_DEPLOYMENT_TARGET: "14.0"
         CODE_SIGNING_ALLOWED: "NO"
         CODE_SIGNING_REQUIRED: "NO"
